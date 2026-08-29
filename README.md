@@ -1,4 +1,4 @@
-# Obsidi Connect
+# Claudianer
 
 Chat with Claude, ChatGPT, or Grok in your vault on iPhone and desktop. The agent can read, write, and search notes. No desktop CLI.
 
@@ -8,14 +8,14 @@ This is meant for **other people** to install, not a private sideload. After you
 
 ## Install on iPhone
 
-Obsidi Connect is not in Browse yet. Use BRAT.
+Claudianer is not in Browse yet. Use BRAT.
 
 1. Settings → Community plugins → turn **Restricted mode** off.
 2. Browse → install **[BRAT](https://github.com/TfTHacker/obsidian42-brat)** → enable it.
 3. Settings → BRAT → **Add beta plugin**.
 4. Paste `thisisntartificial/obsidinect` (or https://github.com/thisisntartificial/obsidinect).
-5. Enable **Obsidi Connect**.
-6. Settings → Obsidi Connect → paste your Claude / ChatGPT / Grok API key.
+5. Enable **Claudianer**.
+6. Settings → Claudianer → paste your Claude / ChatGPT / Grok API key.
 
 Open the robot icon and chat. Same steps work on desktop.
 
@@ -25,9 +25,9 @@ Turn **Restricted mode** off first: Settings → Community plugins.
 
 ### A. Official directory (once listed)
 
-Settings → Community plugins → Browse → search **Obsidi Connect** → Install.
+Settings → Community plugins → Browse → search **Claudianer** → Install.
 
-Each person pastes their own API key in Settings → Obsidi Connect. No keys ship in the plugin.
+Each person pastes their own API key in Settings → Claudianer. No keys ship in the plugin.
 
 ### B. BRAT
 
@@ -47,7 +47,7 @@ Put them here:
 <vault>/.obsidian/plugins/obsidinect/
 ```
 
-Then: reload / wait for Sync → enable **Obsidi Connect** → paste an API key.
+Then: reload / wait for Sync → enable **Claudianer** → paste an API key.
 
 Phone walkthrough: [IPHONE.md](IPHONE.md).  
 Developer copy from a local build: [INSTALL-FROM-BUILD.md](INSTALL-FROM-BUILD.md).  
@@ -55,7 +55,7 @@ How Robert publishes this for strangers: [SHARE.md](SHARE.md).
 
 ## What it does
 
-1. Open **Obsidi Connect chat** from the ribbon or the command palette.
+1. Open **Claudianer chat** from the ribbon or the command palette.
 2. Type a request. The plugin sends the thread (and any attached notes) to your provider over HTTPS with Obsidian’s `requestUrl` — not `fetch`.
 3. The model can call vault tools. The plugin runs them locally:
    - `list_notes` · `read_note` · `search_notes`
@@ -69,7 +69,7 @@ Tap **Stop** on the send button while a reply is in flight.
 
 [Claudian](https://github.com/YishenTu/claudian) (`realclaudian`) is desktop-only. It embeds Claude Code, Codex, Grok Build, OpenCode, and Pi by **spawning those CLIs**.
 
-iOS Obsidian **cannot spawn processes**. Obsidi Connect is a smaller, mobile-first plugin inspired by that UX only. It does not clone Claudian and does not require those CLIs.
+iOS Obsidian **cannot spawn processes**. Claudianer is a smaller, mobile-first plugin inspired by that UX only. It does not clone Claudian and does not require those CLIs.
 
 ## Privacy
 

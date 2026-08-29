@@ -1,8 +1,8 @@
-# Share Obsidi Connect with strangers
+# Share Claudianer with strangers
 
 Origin is the working repo. The official Obsidian directory only accepts a **public GitHub** repository plus a GitHub Release. Do **not** invent an owner or repo slug here. Fill the blanks when the GitHub repo exists.
 
-Product name: **Obsidi Connect**  
+Product name: **Claudianer**  
 Plugin id: **`obsidinect`** (must not contain the substring `obsidian`)  
 Install folder: `.obsidian/plugins/obsidinect/`
 
@@ -40,7 +40,7 @@ Optional local zip for AirDrop: `npm run package` → `obsidinect-<version>.zip`
 
 Copy the [README install section](README.md#install-for-other-people):
 
-1. **A.** Official directory, once listed: Settings → Community plugins → Browse → search **Obsidi Connect** → Install. Works on iPhone after Restricted mode is off.
+1. **A.** Official directory, once listed: Settings → Community plugins → Browse → search **Claudianer** → Install. Works on iPhone after Restricted mode is off.
 2. **B.** BRAT, the day the GitHub repo is public: install BRAT → Add beta plugin → paste the GitHub repo URL.
 3. **C.** Manual: download the three Release files into `.obsidian/plugins/obsidinect/`.
 
@@ -57,7 +57,7 @@ Replace the `________________` blanks. Do not invent an owner.
 ```json
 {
     "id": "obsidinect",
-    "name": "Obsidi Connect",
+    "name": "Claudianer",
     "author": "AUTHOR_HANDLE",
     "description": "Chat with Claude, ChatGPT, or Grok in your vault on iPhone and desktop. The agent can read, write, and search notes. No desktop CLI.",
     "repo": "GITHUB_USER/REPO"
@@ -67,17 +67,17 @@ Replace the `________________` blanks. Do not invent an owner.
 ### PR title
 
 ```text
-Add plugin: Obsidi Connect
+Add plugin: Claudianer
 ```
 
 ### PR body
 
 ```text
-Adding Obsidi Connect to community-plugins.json.
+Adding Claudianer to community-plugins.json.
 
 - repo: GITHUB_USER/REPO
 - id: obsidinect
-- name: Obsidi Connect
+- name: Claudianer
 - author: AUTHOR_HANDLE
 - description: Chat with Claude, ChatGPT, or Grok in your vault on iPhone and desktop. The agent can read, write, and search notes. No desktop CLI.
 - isDesktopOnly: false (in manifest.json — required so the plugin loads on iPhone)

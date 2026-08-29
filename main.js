@@ -1060,7 +1060,7 @@ var ObsidinectSettingTab = class extends import_obsidian6.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    containerEl.createEl("h2", { text: "Obsidi Connect" });
+    containerEl.createEl("h2", { text: "Claudianer" });
     containerEl.createEl("p", {
       text: "HTTPS chat for iPhone and desktop. Keys stay in this plugin\u2019s data file and are never written to notes.",
       cls: "obsidinect-settings-lead"
@@ -1248,7 +1248,7 @@ var ObsidinectView = class extends import_obsidian8.ItemView {
     return VIEW_TYPE_OBSIDINECT;
   }
   getDisplayText() {
-    return "Obsidi Connect";
+    return "Claudianer";
   }
   getIcon() {
     return "bot";
@@ -1277,7 +1277,7 @@ var ObsidinectView = class extends import_obsidian8.ItemView {
     const title = header.createDiv({ cls: "obsidinect-title" });
     const icon = title.createSpan({ cls: "obsidinect-title-icon" });
     (0, import_obsidian8.setIcon)(icon, "bot");
-    title.createSpan({ text: "Obsidi Connect" });
+    title.createSpan({ text: "Claudianer" });
     const actions = header.createDiv({ cls: "obsidinect-header-actions" });
     this.iconButton(actions, "eraser", "New chat", () => {
       this.plugin.session.clear();
@@ -1537,12 +1537,12 @@ var ObsidinectPlugin = class extends import_obsidian9.Plugin {
     await this.loadSettings();
     this.session = new ChatSession(this.app);
     this.registerView(VIEW_TYPE_OBSIDINECT, (leaf) => new ObsidinectView(leaf, this));
-    this.addRibbonIcon("bot", "Open Obsidi Connect chat", () => {
+    this.addRibbonIcon("bot", "Open Claudianer chat", () => {
       void this.activateView();
     });
     this.addCommand({
       id: "open-obsidinect-chat",
-      name: "Open Obsidi Connect chat",
+      name: "Open Claudianer chat",
       callback: () => {
         void this.activateView();
       }
