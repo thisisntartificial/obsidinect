@@ -1,0 +1,366 @@
+.obsidinect-leaf {
+	padding: 0;
+	overflow: hidden;
+}
+
+.obsidinect-root {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 0;
+	background: var(--background-primary);
+	color: var(--text-normal);
+	padding-bottom: calc(var(--obsidinect-keyboard, 0px) + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px)));
+}
+
+.obsidinect-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	padding: 10px 12px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+	flex-shrink: 0;
+}
+
+.obsidinect-title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 650;
+	font-size: 15px;
+}
+
+.obsidinect-title-icon {
+	display: inline-flex;
+	color: var(--interactive-accent);
+}
+
+.obsidinect-header-actions {
+	display: flex;
+	gap: 6px;
+}
+
+.obsidinect-messages {
+	flex: 1;
+	min-height: 0;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.obsidinect-empty {
+	margin: auto;
+	max-width: 28rem;
+	text-align: center;
+	padding: 24px 12px;
+}
+
+.obsidinect-empty h3 {
+	margin: 0 0 8px;
+	font-size: 1.15rem;
+}
+
+.obsidinect-empty p,
+.obsidinect-muted {
+	color: var(--text-muted);
+	margin: 0;
+}
+
+.obsidinect-bubble {
+	max-width: 100%;
+	padding: 10px 12px;
+	border-radius: 14px;
+	line-height: 1.45;
+	font-size: 15px;
+}
+
+.obsidinect-bubble.is-user {
+	align-self: flex-end;
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.obsidinect-bubble.is-user .obsidinect-md a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.obsidinect-bubble.is-assistant {
+	align-self: stretch;
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+}
+
+.obsidinect-bubble.is-tool,
+.obsidinect-bubble.is-error {
+	align-self: stretch;
+	font-size: 13px;
+}
+
+.obsidinect-bubble.is-tool {
+	background: var(--background-secondary-alt, var(--background-secondary));
+	color: var(--text-muted);
+}
+
+.obsidinect-bubble.is-error {
+	background: var(--background-modifier-error);
+	color: var(--text-error, var(--text-normal));
+}
+
+.obsidinect-md p:first-child,
+.obsidinect-md h1:first-child,
+.obsidinect-md h2:first-child,
+.obsidinect-md h3:first-child {
+	margin-top: 0;
+}
+
+.obsidinect-md p:last-child {
+	margin-bottom: 0;
+}
+
+.obsidinect-meta,
+.obsidinect-tools {
+	margin-top: 8px;
+	font-size: 12px;
+	opacity: 0.85;
+}
+
+.obsidinect-tool.is-error {
+	color: var(--text-error);
+}
+
+.obsidinect-status {
+	flex-shrink: 0;
+	padding: 6px 14px;
+	font-size: 13px;
+	color: var(--text-muted);
+}
+
+.obsidinect-status.is-busy::before {
+	content: "";
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	margin-right: 8px;
+	border-radius: 50%;
+	background: var(--interactive-accent);
+	animation: obsidinect-pulse 1s ease-in-out infinite;
+}
+
+@keyframes obsidinect-pulse {
+	0%,
+	100% {
+		opacity: 0.35;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+.obsidinect-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 0 12px 8px;
+}
+
+.obsidinect-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	max-width: 100%;
+	padding: 6px 8px 6px 10px;
+	border-radius: 999px;
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	font-size: 13px;
+}
+
+.obsidinect-chip span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.obsidinect-suggest {
+	margin: 0 12px 8px;
+	max-height: 220px;
+	overflow-y: auto;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 12px;
+	background: var(--background-primary);
+	box-shadow: var(--shadow-s, 0 8px 24px rgba(0, 0, 0, 0.18));
+}
+
+.obsidinect-suggest-item {
+	padding: 12px;
+	min-height: 44px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.obsidinect-suggest-item:last-child {
+	border-bottom: none;
+}
+
+.obsidinect-suggest-item.is-active,
+.obsidinect-suggest-item:active {
+	background: var(--background-modifier-hover);
+}
+
+.obsidinect-suggest-name {
+	font-weight: 600;
+}
+
+.obsidinect-suggest-path,
+.obsidinect-suggest-empty {
+	color: var(--text-muted);
+	font-size: 12px;
+}
+
+.obsidinect-suggest-empty {
+	padding: 12px;
+}
+
+.obsidinect-composer {
+	flex-shrink: 0;
+	padding: 8px 10px 10px;
+	border-top: 1px solid var(--background-modifier-border);
+	background: var(--background-primary);
+}
+
+.obsidinect-composer-row {
+	display: flex;
+	align-items: flex-end;
+	gap: 8px;
+}
+
+.obsidinect-input {
+	flex: 1;
+	min-height: 44px;
+	max-height: 160px;
+	resize: none;
+	padding: 10px 12px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 12px;
+	background: var(--background-secondary);
+	color: var(--text-normal);
+	font-size: 16px;
+	line-height: 1.4;
+	font-family: inherit;
+}
+
+.obsidinect-icon-btn,
+.obsidinect-send,
+.obsidinect-chip-x {
+	appearance: none;
+	border: none;
+	background: transparent;
+	color: var(--text-muted);
+	min-width: 44px;
+	min-height: 44px;
+	border-radius: 12px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	touch-action: manipulation;
+}
+
+.obsidinect-send {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.obsidinect-send:disabled {
+	opacity: 0.45;
+}
+
+.obsidinect-send.is-stop {
+	background: var(--background-modifier-error);
+	color: var(--text-on-accent, var(--text-normal));
+}
+
+.obsidinect-icon-btn:active,
+.obsidinect-chip-x:active,
+.obsidinect-suggest-item:active,
+.obsidinect-send:active {
+	filter: brightness(0.95);
+}
+
+.obsidinect-chip-x {
+	min-width: 32px;
+	min-height: 32px;
+	color: var(--text-muted);
+}
+
+.obsidinect-system-prompt,
+.obsidinect-inline-instruction {
+	width: 100%;
+	min-height: 88px;
+	font-size: 16px;
+}
+
+.obsidinect-settings-lead {
+	color: var(--text-muted);
+	margin-top: 0;
+}
+
+.obsidinect-inline-modal .modal-content {
+	padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+}
+
+.obsidinect-inline-scope {
+	color: var(--text-muted);
+	margin-bottom: 12px;
+	font-size: 13px;
+}
+
+.obsidinect-inline-preview {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 12px;
+	margin: 12px 0;
+}
+
+@media (min-width: 720px) {
+	.obsidinect-inline-preview {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.obsidinect-inline-col {
+	min-width: 0;
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 12px;
+	padding: 10px;
+}
+
+.obsidinect-inline-col h4 {
+	margin: 0 0 8px;
+}
+
+.obsidinect-inline-col pre {
+	margin: 0;
+	white-space: pre-wrap;
+	word-break: break-word;
+	font-size: 13px;
+	max-height: 240px;
+	overflow: auto;
+}
+
+.obsidinect-confirm-copy {
+	font-size: 15px;
+	line-height: 1.45;
+}
+
+.obsidinect-root button,
+.obsidinect-inline-modal button,
+.modal .obsidinect-confirm-copy + .setting-item button {
+	min-height: 44px;
+}
