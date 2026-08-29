@@ -6,7 +6,20 @@ Plugin id: `obsidinect` · `isDesktopOnly`: **false** (loads on iPhone) · MIT
 
 This is meant for **other people** to install, not a private sideload. After you publish a public GitHub repo and a release, strangers can use A, then B, then C.
 
-## Install (for other people)
+## Install on iPhone
+
+Obsidinect is not in Browse yet. Use BRAT.
+
+1. Settings → Community plugins → turn **Restricted mode** off.
+2. Browse → install **[BRAT](https://github.com/TfTHacker/obsidian42-brat)** → enable it.
+3. Settings → BRAT → **Add beta plugin**.
+4. Paste `thisisntartificial/obsidinect` (or https://github.com/thisisntartificial/obsidinect).
+5. Enable **Obsidinect**.
+6. Settings → Obsidinect → paste your Claude / ChatGPT / Grok API key.
+
+Open the robot icon and chat. Same steps work on desktop.
+
+## Other install paths
 
 Turn **Restricted mode** off first: Settings → Community plugins.
 
@@ -14,17 +27,11 @@ Turn **Restricted mode** off first: Settings → Community plugins.
 
 Settings → Community plugins → Browse → search **Obsidinect** → Install.
 
-This is the path that works on iPhone too after Restricted mode is off. Each person pastes their own API key in Settings → Obsidinect. No keys ship in the plugin.
+Each person pastes their own API key in Settings → Obsidinect. No keys ship in the plugin.
 
-### B. BRAT (available the day the repo is public)
+### B. BRAT
 
-1. Install [BRAT](https://github.com/TfTHacker/obsidian42-brat) from Community plugins.
-2. BRAT → **Add beta plugin**.
-3. Paste the public GitHub repo URL (the `https://github.com/<you>/<repo>` page, not a zip).
-4. Enable **Obsidinect**.
-5. Paste an API key in Settings → Obsidinect.
-
-BRAT reads `manifest.json` / `versions.json` from the repo and the three files from the GitHub Release.
+Same as **Install on iPhone** above. Repo: [thisisntartificial/obsidinect](https://github.com/thisisntartificial/obsidinect).
 
 ### C. Manual (GitHub Release files)
 
