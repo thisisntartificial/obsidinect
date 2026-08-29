@@ -31,8 +31,8 @@ Then on the phone (or desktop Obsidian):
 
 1. Reload the vault or wait for iCloud / Obsidian Sync.
 2. Settings → Community plugins → Restricted mode off.
-3. Enable **Claudianer**.
-4. Paste an API key in Settings → Claudianer.
+3. Enable **Claudius**.
+4. Paste an API key in Settings → Claudius.
 
 Do not copy `src/`, `node_modules/`, or `main.js.map`. Only the three files above are loaded.
 
