@@ -1,19 +1,19 @@
-# Install Obsidinect on iPhone
+# Install Obsidi Connect on iPhone
 
 Public repo: https://github.com/thisisntartificial/obsidinect
 
 ## BRAT (do this)
 
-Obsidinect is not in Browse yet.
+Obsidi Connect is not in Browse yet.
 
 1. Open the vault on your iPhone.
 2. Settings → Community plugins → turn **Restricted mode** off.
 3. Browse → install **BRAT** → enable it.
 4. Settings → BRAT → **Add beta plugin**.
 5. Paste `thisisntartificial/obsidinect`.
-6. Enable **Obsidinect**.
-7. Settings → Obsidinect → pick Claude / ChatGPT / Grok → paste your API key → **Test connection**.
-8. Tap the robot **Obsidinect** icon (ribbon / mobile menu) and chat.
+6. Enable **Obsidi Connect**.
+7. Settings → Obsidi Connect → pick Claude / ChatGPT / Grok → paste your API key → **Test connection**.
+8. Tap the robot **Obsidi Connect** icon (ribbon / mobile menu) and chat.
 
 Type `@` to attach a note. Ask it to write or edit notes. Select text and use **Inline edit** for a before/after preview.
 
@@ -31,7 +31,7 @@ Download them from https://github.com/thisisntartificial/obsidinect/releases/tag
 
 If the vault is in iCloud or Obsidian Sync, drop the files on a computer and wait. iPhone-only: Files app → vault → `.obsidian` → `plugins` → create `obsidinect` → drop the three files.
 
-Then: open that vault → Restricted mode off → enable **Obsidinect** → paste an API key.
+Then: open that vault → Restricted mode off → enable **Obsidi Connect** → paste an API key.
 
 ## If something is blank
 
